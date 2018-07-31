@@ -2,23 +2,42 @@
 <html lang="en">
 
   <head>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon//apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon//apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon//apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon//apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon//apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon//apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon//apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon//android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon//favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>TheBiggerPicture</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="js/grayscale.js" >
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet">
+    <script src="js/grayscale.js"></script>
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
   </head>
 
@@ -27,7 +46,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">The Bigger Picture</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -35,13 +54,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger active" href="#whywecare">Why We Care</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#stats">Stats</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#game">Game</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#whoweare">Who We Are</a>
             </li>
           </ul>
         </div>
@@ -52,177 +74,336 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+          <h1 class="mx-auto my-0 text-uppercase">The Bigger Picture</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">Aiming to create awareness around the resources we take advantage of in our day to day lives</h2>
+          <a href="#whywecare" class="btn btn-primary js-scroll-trigger">Donate</a>
         </div>
       </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about-section text-center">
+    <section id="whywecare" class="about-section text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-            <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <div class="mx-auto">
+            <h2 class="text-white mb-4">Why We Care</h2>
+            <p class="text-white-50">Living in the United States, despite our varying races and genders, we are constantly bombarded by aspects and events in our lives.
+              These aspects can be easily circumnavigated after being aided by our privilege. However, often times, we are not even aware of this privilege that we constantly wield as if it is our right. This game aims to educate our audiences on these privileges. We also aim to raise awareness on the living conditions of many families, especially young girls, in third world countries. We also will link to charities and organizations that will allow users to donate.</p>
           </div>
-        </div>
-        <img src="img/ipad.png" class="img-fluid" alt="">
+            <div class="mx-auto">
+              <h2 class="text-white mb-4"><center>How to Help</h2></center>
+              <p class="text-white-50"><p><a href="https://www.globalgiving.org/">Global Giving</a></p>
+              <p class="text-white-50"><p><a href="https://www.heifer.org/gift-catalog/sustainable-farming/earth-gift-basket-donation.html">Heifer International</a></p>
+            </div>
+            </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section bg-light">
+    <section id="stats" class="projects-section bg-light">
       <div class="container">
-
         <!-- Featured Project Row -->
+        <pre><h4>
+          <center>STATS</center>
+        </h4></pre>
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/Pink_And_Turquoise_Sunset.jpg" alt="">
+            <img class="= mb-3 mb-lg-0" src="img/USA.jpg.png" alt="img/USA.jpg.png" width="500" height="400">
           </div>
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
-              <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+              <h4>USA</h4>
+              <p class="text-black-50 mb-0 STATS">Population: 325.7 million</p>
+              <p class="text-black-50 mb-0 STATS">Percent in Poverty: 12.7%</p>
+              <p class="text-black-50 mb-0 STATS">Average Annual Income: $56,516</p>
+              <p class="text-black-50 mb-0 STATS">Average Daily Income: $211.36</p>
+              <p class="text-black-50 mb-0 STATS">  The United States is generally accepted as a First World Country. However, despite that moniker, the poverty rate in the US is a staggering 12.7%, ergo, 41.36 million people are living in poverty in America today. In addition, although it does not seem to be a prevalent problem, water access is surprisingly difficult for many Americans. According to the Environmental Finance Center, “Many individuals living in or around some of the wealthiest jurisdictions in the United States, with some of the most sophisticated drinking water and wastewater systems and infrastructure, suffer from significant access challenges as well.” Although, for many, the name, The United States of America, has become a symbol of power, it is important to acknowledge the difficulties of many people living there today.</p>
             </div>
           </div>
         </div>
-
-        <!-- Project One Row -->
-        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="imgyemen" src="img/yemen.jpg" alt="img/yemen.jpg" width="500" height="400">
           </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Misty</h4>
-                  <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
-              </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Yemen</h4>
+              <p class="text-black-50 mb-0 STATS">Population: 25.4 million</p>
+              <p class="text-black-50 mb-0 STATS">Percent in Poverty: 42%</p>
+              <p class="text-black-50 mb-0 STATS">Average Annual Income:  $725</p>
+              <p class="text-black-50 mb-0 STATS">Average Daily Income: $1.80 </p>
+              <p class="text-black-50 mb-0 STATS">  Yemen, an Arab sovereign state in Western Asia at the southern end of the Arabian Peninsula, is mostly an arid, flat, coastal plain. Around 10.67 million people live under the poverty line. To make matters worse, during the day, temperatures can skyrocket and then plummet at night. According to UNICEF, “In one of the world’s most water-scarce countries, the conflict in Yemen has made matters worse, particularly for children who depend on clean drinking water and adequate sanitation for good health and survival...19.3 million Yemenis do not have access to clean water and sanitation. Of these, 50% have been directly cut off from these basics of life by the conflict.”</p>
             </div>
           </div>
         </div>
-
-        <!-- Project Two Row -->
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+        <center>
+          <p>
+        <img src="yemenandusa_copy.png" alt="yemenandusa_copy.png" width="300" height="200" class="center">
+      </p>
+        </center>
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="mb-3 mb-lg-0" src="img/japan.jpg" alt="img/japan.jpg" width="500" height="350">
           </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Mountains</h4>
-                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
-              </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Japan</h4>
+              <p class="text-black-50 mb-0 STATS">Population: 127 million</p>
+              <p class="text-black-50 mb-0 STATS">Percent in Poverty: 16%</p>
+              <p class="text-black-50 mb-0 STATS">Average Annual Income:  $28,641</p>
+              <p class="text-black-50 mb-0 STATS">Average Daily Income: $74.86 </p>
+              <p class="text-black-50 mb-0 STATS">  Japan, regarded by many as a powerhouse in the Asian economy, has a 16% percent poverty rate. This means that 20.32 million people live in poverty in Japan. Despite their reputation as a clean, minimalistic, high tech society, many people living in poverty do not have access to Japan’s tech. This is a much worse situation to be in in Japan rather than any other country because most of Japan’s entire society revolves around technology. Without access to such technologies it can be incredibly difficult to integrate into society in Japan. Despite Japan’s reputation as a highly industrial nation, it is vital to not categorize japanese people as all highly successful entrepreneurs and be mindful of the struggles of many people who live there.</p>
             </div>
+          </div>
+        </div>
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="mb-3 mb-lg-0" src="img/malawicopy.jpg.png" alt="img/malawicopy.jpg.png" width="500" height="350">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Malawi</h4>
+              <p class="text-black-50 mb-0 STATS">Population: 18.09 million</p>
+              <p class="text-black-50 mb-0 STATS">Percent in Poverty: 50.7%</p>
+              <p class="text-black-50 mb-0 STATS">Percent in Extreme Poverty: 25%</p>
+              <p class="text-black-50 mb-0 STATS">Average Annual Income:  $250</p>
+              <p class="text-black-50 mb-0 STATS">Average Daily Income: $0.68</p>
+                <p class="text-black-50 mb-0 STATS">  Malawi, a small country located on the continent of Africa, is currently the 3rd poorest country in the world. Around 50.7% of people are living under the poverty line, hence, about 9.17 million people make under $1.90, the international poverty line. In addition, around 25%, or 4.65 million people, live in extreme poverty which means living under an income of $1.25 daily. Nevertheless, according to UNICEF, “Malawi has made significant progress in increasing access to safe water and sanitation. According to the 2006 MICS report, access to safe water is at 74%, access to improved sanitation is at 47%, while access to basic sanitation which includes traditional latrines is as high as 88%. However, good hygiene practices are rather low with only 37% of the population practising better hygiene”.</p>
+            </div>
+          </div>
+        </div>
+        <center>
+          <p>
+        <img src="malawijapF.png" alt="malawijapF.png" width="340" height="230" class="center">
+      </p>
+        </center>
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="mb-3 mb-lg-0" src="img/unitedkingdom.png" alt="img/unitedkingdom.png" width="400" height="350">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Great Britain</h4>
+              <p class="text-black-50 mb-0 STATS">Population: 65.64 million</p>
+              <p class="text-black-50 mb-0 STATS">Percent in Poverty: 7.3%</p>
+              <p class="text-black-50 mb-0 STATS">Average Annual Income:  $35,492.25</p>
+              <p class="text-black-50 mb-0 STATS">Average Daily Income: $97.28</p>
+                <p class="text-black-50 mb-0 STATS">  Great Britain is arguably one of the most industrially advanced countries and boasts an impressive repertoire concerning technology growth. However, despite all these advancements, about 7.3% of the population lives in poverty and does not have access to such progress. That means around 4.8 million people are, to some extent, disconnected from a society that is growing increasingly technology dependent. Nevertheless, Great Britain possesses one of the highest water accessibility percentages in the world. Around 100% of the urban population can access clean, sanitary water and 98% of the rural population can claim water clean enough to safely drink. It is important to acknowledge that even the most privileged countries, such as Great Britain, have unseen poverty.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="mb-3 mb-lg-0" src="img/bangladesh2.png" alt="img/bangladesh2.png" width="350" height="400">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Bangladesh</h4>
+              <p class="text-black-50 mb-0 STATS">Population: 163 million</p>
+              <p class="text-black-50 mb-0 STATS">Percent in Poverty: 17.6%</p>
+              <p class="text-black-50 mb-0 STATS">Average Annual Income:  $13,258</p>
+              <p class="text-black-50 mb-0 STATS">Average Daily Income: $36.82</p>
+                <p class="text-black-50 mb-0 STATS">  Bangladesh, a small country located in south Asia, has a poverty percentage of 17.6%. This means 28.7 million people live under the international poverty line today. In addition, according to The Water Project, “ 97% of the people of Bangladesh have access to water and only 40% percent have proper sanitation. With a staggering 60% of the population that has to endure unsafe drinking water, the nation is in danger.”</p>
+              </div>
           </div>
         </div>
 
       </div>
+      <center>
+        <p>
+      <img src="img/banggbF.png" alt="img/banggbF.png" width="340" height="230" class="center">
+    </p>
+      </center>
+      <pre>
+
+      </pre>
+      <iframe src="https://ourworldindata.org/grapher/share-of-the-population-with-access-to-improved-drinking-water" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
     </section>
 
     <!-- Signup Section -->
-    <section id="signup" class="signup-section">
+    <section id="game" class="signup-section">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
-            <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-            </form>
-
-          </div>
-        </div>
-      </div>
+            <center><strong>
+            <pre> <h4> GAME </h4> </pre>
+            </center></strong>
+            <div id="scratch-games" class="container">
+                <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/237376005/?autostart=false" frameborder="0" allowfullscreen></iframe>
+            <!--iframe allowtransparency="true" width="693.55" height="574.86" src="//scratch.mit.edu/projects/embed/170359746/?autostart=false" frameborder="0" allowfullscreen=""></iframe-->
+            </div>
     </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section bg-black">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Address</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="#">hello@yourdomain.com</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Phone</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">+1 (555) 902-8832</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-
       </div>
-    </section>
+        </div>
+          </div>
+
+
+
+
+
 
     <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
+  <section id="whoweare">
+    <footer class="col-md-10 col-lg-8 mx-auto text-center">
       <div class="container">
-        Copyright &copy; Your Website 2018
+
       </div>
     </footer>
+  </section>
 
+    <section id="creators" class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto text-center">
+            <center><strong>
+              <h4>MEET THE CREATORS</h4>
+            </center></strong>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="creators" class="contact-section">
+    <div class="row">
+        <div class="container">
+             <div class="col-lg-8 col-lg-offset-2" mx-auto text-center>
+             </div>
+
+                            <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                      <li><img src="img/lea.jpg" alt="img/lea.jpg" width="250" height="330">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <h4>Lea Albano</h4>
+                                            <p>Game Designer</p>
+                                            <p>Lea Albano is an incoming senior at James Logan High School in Union City, CA. She is interested in software engineering, business, and math. She joined Girls Who Code with a foundation in computer science and further cultivated her passion for this field through this program. She loves watching nature documentaries and is passionate about animal and plant conservation.With this project she hopes to educate her peers about the privilege of living in the United States and become aware of their usage and wastage of precious natural resources.</p>
+                                            <a href="https://www.linkedin.com/in/lea-albano-2a7456168/"><img src="img/linkedin.png" alt="img/linkedin.png" width="90" height="90"></a>
+
+                                          </li>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+
+
+
+                           <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                      <li>
+                                        <img src="img/athena.jpg" alt="img/athena.jpg" width="250" height="330">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <h4>Athena</h4>
+                                            <p>Game Engineer</p>
+                                            <p>Natalie Curiel is an incoming junior in Sonoma County. Although she has just begun her journey beyond schooling, Natalie shows incredible promise as an aspiring artist and graphic designer. She joined Girls Who Code with no experience in coding, but after this program, she has learned languages such as Scratch, Python, HTML, CSS, and JavaScript. She is incredibly passionate about portraying the beauty in each and every country regardless of their material wealth. </p>
+                                            <a href="https://www.linkedin.com/in/natalie-curiel-4a1456168/"><img src="img/linkedin.png" alt="img/linkedin.png" width="90" height="90"></a>
+
+                                          </li>
+
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+
+
+
+
+                            <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                      <li>
+                                        <img src="img/marika.jpg" alt="img/marika.jpg" width="250" height="330">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <h4>Marika Fong</h4>
+                                            <div class="team-title">
+                                              <p>Web Developer</p>
+                                              <p>Marika Fong is an incoming junior at Sequoia High School in Redwood City, CA. She hopes to incorporate her love for business and computer science and become an entrepreneur. Coming into Girls Who Code, she had no knowledge of computer science and has since been able to learn Python, C++, Html, CSS and JavaScript. Using all that she has learned, she was able to design and program the website to create more awareness around the privileges we have living in the US in comparison to people living in third world countries.</p>
+                                              <div class="s-link">
+                                              <a href="https://www.linkedin.com/in/marika-fong-b56457168/"><img src="img/linkedin.png" alt="img/linkedin.png" width="90" height="90"></a>
+                                              </div>
+                                            </div>
+
+                                          </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                      <li>
+                                        <img src="img/aastha2.jpg" alt="img/aastha2.jpg" width="250" height="330">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                          <h4>Aastha Gautam</h4>
+                                            <div class="team-title">
+                                                <p>Research Director</p>
+                                            </div>
+                                            <p>Aastha Gautam is an incoming senior at American High School in Fremont, CA. She has always loved biology and dreams of pursuing that field whether it be as a researcher, bioengineer, or doctor. She joined Girls Who Code because she knows that the future of medicine and the future of technology will continue to evolve together and affect people’s lives, hopefully for the better. She came into this program with the most arbitrary of knowledge on coding and is leaving with experience in languages such as Scratch, Python, HTML, CSS, C, JavaScript, and C++. She is incredibly passionate about women’s studies and the lack of diversity in STEAM careers. She has found working with this team an incredible privilege and will forever cherish the memories she has gained from this program!</p>
+                                            <a href="https://www.linkedin.com/in/aastha-gautam-2a0456168/"><img src="img/linkedin.png" alt="img/linkedin.png" width="90" height="90"></a>
+
+                                          </div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                      <li>
+                                        <img src="img/sangita.jpg" alt="img/sangita.jpg" width="250" height="330">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <h4>Sangita Kunapuli</h4>
+                                            <div class="team-title">
+                                              <p>Data Analyst</p>
+                                              <p>Sangita Kunapuli is an incoming junior at Monta Vista High School in Cupertino, CA. She is interested in data science and loves math. She joined Girls Who Code with little knowledge of coding but has since learned many valuable lessons and has begun learning languages such as Scratch, Python, HTML, CSS, and JavaScript. She is passionate about inspiring the younger female generation to be interested in STEM and promotes women inclusion in tech.</p>
+
+                                              <a href="https://www.linkedin.com/in/sangita-kunapuli-246bb0155"><img src="img/linkedin.png" alt="img/linkedin.png" width="90" height="90"></a>
+
+                                            </div>
+                                          </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <center>
+                              <p>
+                            <img src="img/grouppic.jpg" alt="img/grouppic.jpg" width="500" height="350" class="center">
+                          </p>
+                            </center>
+                        </div>
+                  </div>
+                <!-- </div> -->
+              </section>
+    </body>
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/font-awesome/js/all.js"></script>
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="font-awesome/js/all.js"></script>
+    <script src="jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+    <script src="js/grayscale.js"></script>
 
-  </body>
+
+
 
 </html>

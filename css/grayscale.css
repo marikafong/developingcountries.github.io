@@ -78,13 +78,14 @@
   }
 }
 
+
 .masthead {
   position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("img/Pink_And_Turquoise_Sunset.jpg");
+  background: url("../img/Pink_And_Turquoise_Sunset.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -127,6 +128,7 @@
     max-width: 30rem;
     font-size: 1.25rem;
   }
+
 }
 
 .btn {
@@ -158,7 +160,7 @@
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  background-color: #48968E;
 }
 
 .about-section p {
@@ -198,7 +200,7 @@
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background-color: #FF877A;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -265,7 +267,11 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: #FFFFFF;
+}
+
+li {
+    display: inline;
 }
 
 a:focus, a:hover {
@@ -287,4 +293,13 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+.text-black-50.mb-0.STATS {
+  font-size: 0.65rem;
+}
+li {
+    display: inline;
+}
+.s-link {
+      display: inline-block;
 }

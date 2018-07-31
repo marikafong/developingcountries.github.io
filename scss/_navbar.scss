@@ -28,7 +28,15 @@
         background-color: transparent;
       }
     }
+    .navbar>.container,
+    .navbar>.container-fluid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
+
   @media (min-width: 992px) {
     padding-top: 0;
     padding-bottom: 0;

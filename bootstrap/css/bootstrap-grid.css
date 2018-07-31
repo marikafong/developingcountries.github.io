@@ -480,6 +480,8 @@ html {
     -ms-flex: 0 0 25%;
         flex: 0 0 25%;
     max-width: 25%;
+    display: inline-block;
+    float:left;
   }
   .col-md-4 {
     -ms-flex: 0 0 33.333333%;
@@ -742,6 +744,10 @@ html {
     -ms-flex-order: 12;
         order: 12;
   }
+ .col-lg-13 {
+   -ms-flex-order: 5;
+       order: 5;
+ }
   .offset-lg-0 {
     margin-left: 0;
   }
@@ -813,6 +819,7 @@ html {
     -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
     max-width: 33.333333%;
+    margin-left: -100px;
   }
   .col-xl-5 {
     -ms-flex: 0 0 41.666667%;
@@ -853,6 +860,12 @@ html {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     max-width: 100%;
+  }
+  .col-xl-13 {
+    -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    margin-right: -100px;
   }
   .order-xl-first {
     -ms-flex-order: -1;
