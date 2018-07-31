@@ -1,0 +1,86 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.ticker import MaxNLocator
+from collections import namedtuple
+import json
+
+file = open("countrydata.json", "w")
+
+dict = {"Yemen": {"percent poverty": 42, "population": "25.4 million", "income per day": 2, "income per year": 725},
+"USA": {"percent poverty": 12.7, "population": "325.7 million", "income per day": 211.36, "income per year": 56516},
+"Cuba": {"percent poverty": 66.6, "population": "11.48 million", "income per day": 0.66, "income per year": 240},
+"Great Britain": {"percent poverty": 7.3, "population": "65.64 million", "income per day": 97.28, "income per year": 35492.25},
+"Malawi": {"percent poverty": 50.7, "population": "18.09 million", "income per day": 0.68, "income per year": 250},
+"Japan": {"percent poverty": 16, "population": "127 million", "income per day": 74.86, "income per year": 28641},
+"Bangladesh": {"percent poverty": 17.6, "population": "163 million", "income per day": 36.82, "income per year": 13258},}
+
+json.dump(dict, file)
+
+file.close()
+
+with open("countrydata.json") as f:
+    data = json.load(f)
+print (data)
+
+n_groups = 1
+
+Yemen = (dict["Yemen"]["income per day"])
+
+USA = (dict["USA"]["income per day"])
+# std_women = (3, 5, 2, 3, 3)
+Bang = (dict["Bangladesh"]["income per day"])
+
+GB = (dict["Great Britain"]["income per day"])
+
+Malawi = (dict["Malawi"]["income per day"])
+
+Japan = (dict["Japan"]["income per day"])
+
+fig, ax = plt.subplots()
+
+index = np.arange(n_groups)
+bar_width = 0.15
+
+opacity = 0.4
+error_config = {'ecolor': '0.3'}
+
+rects1 = ax.bar(index + (0.5 * bar_width), Yemen, bar_width,
+                alpha=opacity, color='#21295C', error_kw=error_config,
+                label='Yemen')
+
+rects2 = ax.bar(index + (1.5 * bar_width), USA, bar_width,
+                alpha=opacity, color='#62466B', error_kw=error_config,
+                label='USA')
+
+rects3 = ax.bar(index + (2.5 * bar_width), Bang, bar_width,
+                alpha=opacity, color='#8BC9EF', error_kw=error_config,
+                label='Bangladesh')
+
+rects4 = ax.bar(index + (3.5 * bar_width), GB, bar_width,
+                alpha=opacity, color='#5E9978', error_kw=error_config,
+                label='Great Britain')
+
+rects5 = ax.bar(index + (4.5 * bar_width), Malawi, bar_width,
+                alpha=opacity, color='#2D2327', error_kw=error_config,
+                label='Malawi')
+
+rects6 = ax.bar(index + (5.5 * bar_width), Japan, bar_width,
+                alpha=opacity, color='#1C7293', error_kw=error_config,
+                label='Japan')
+
+
+axes = plt.gca()
+
+axes.set_ylim([0, 215])
+
+ax.set_xlabel('Countries')
+#plt.set_yscale([0, 100])
+
+ax.set_ylabel('Income per Day (USD)')
+ax.set_title('Daily Income for Multiple Countries')
+ax.set_xticks(index + bar_width / 2)
+ax.set_xticklabels((' ', ' '))
+ax.legend()
+
+#fig.tight_layout()
+plt.show()
